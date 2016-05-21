@@ -7,7 +7,7 @@ var useragent = require("useragent");
 var port = process.env.PORT || 3000;
 
 //Set API reference point
-app.get("/api/whoami", function(request, response) {
+app.get("/", function(request, response) {
     
     //Get the OS
     var agent = useragent.parse(request.headers["user-agent"]);
